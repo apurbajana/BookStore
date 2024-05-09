@@ -3,7 +3,7 @@ import { Button, Label, Select, TextInput, Textarea } from 'flowbite-react';
 
 export default function UploadBook() {
   const bookCategories = [
-    "Fiction", "Non-Fiction", "Mystery", "Programming", "Science-Fiction", "Fantasy",
+    "Fiction", "Non-Fiction", "Mystery","Drama","Programming", "Science-Fiction", "Fantasy",
     "Horror", "Bibliography", "Autobiography", "History", "Self-Help", "Memoir",
     "Business-Books", "Children", "Travel", "Religion", "Art and Design"
   ]
