@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Table } from 'flowbite-react';
 import {Link} from 'react-router-dom'
+const BASE_URL = `${import.meta.env.BASE_URL}:${import.meta.env.PORT}`
+
 export default function ManageBooks() {
   const [allBooks,setAllBooks]=useState([]);
   useEffect(()=>{
-    fetch("http://localhost:5000/all-books").then(res=>res.json()).then(data=>setAllBooks(data));
+    fetch(`http://localhost:5000/all-books`).then(res=>res.json()).then(data=>setAllBooks(data));
   },[])
   //delete a book 
   const handleDelete=(id)=>{

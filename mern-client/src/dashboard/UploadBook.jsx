@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Label, Select, TextInput, Textarea } from 'flowbite-react';
+const BASE_URL = `${import.meta.env.BASE_URL}:${import.meta.env.PORT}`
+
 
 export default function UploadBook() {
   const bookCategories = [

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { Button, Label, Select, TextInput, Textarea } from 'flowbite-react';
+const BASE_URL = `${import.meta.env.BASE_URL}:${import.meta.env.PORT}`
+
 
 export default function EditBooks() {
   const { id } = useParams();
@@ -32,7 +34,7 @@ bookDescription,bookPDFURL
 
     console.log(bookObj);
     //update book data
-    fetch(`http://localhost:5000/book/${id}`,{
+    fetch(`${BASE_URL}/book/${id}`,{
       method:"PATCH",
       headers:{
         "Content-Type":"application/json"
