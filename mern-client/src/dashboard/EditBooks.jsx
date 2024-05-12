@@ -34,7 +34,7 @@ bookDescription,bookPDFURL
 
     console.log(bookObj);
     //update book data
-    fetch(`${BASE_URL}/book/${id}`,{
+    fetch(`https://bookstore-server-m0wg.onrender.com/book/${id}`,{
       method:"PATCH",
       headers:{
         "Content-Type":"application/json"
